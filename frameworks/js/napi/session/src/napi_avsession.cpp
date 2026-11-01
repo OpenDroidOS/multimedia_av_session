@@ -2095,7 +2095,7 @@ napi_value NapiAVSession::GetAVCastController(napi_env env, napi_callback_info i
     };
     return NapiAsyncWork::Enqueue(env, context, "GetAVCastController", executor, complete);
 #else
-    return null;
+    return nullptr;
 #endif
 }
 
@@ -2391,7 +2391,7 @@ napi_value NapiAVSession::ReleaseCast(napi_env env, napi_callback_info info)
     };
     return NapiAsyncWork::Enqueue(env, context, "ReleaseCast", executor, complete);
 #else
-    return null;
+    return nullptr;
 #endif
 }
 
